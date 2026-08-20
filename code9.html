@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function bike(make, model, year, color) {
+            this.make = make,
+                this.model = model,
+                this.year = year,
+                this.color = color,
+                this.drive = function () { console.log(`You ride the ${this.model}`) }
+        }
+
+        const bike1 = new bike("royal enfield", "gt 650", 2024, "chrome");
+        const bike2 = new bike("bmw", "...", 2025, "blue");
+
+        console.log(bike1.make);
+        console.log(bike1.model);
+        console.log(bike1.year);
+        console.log(bike1.color);
+
+        console.log(bike2.make);
+        console.log(bike2.model);
+        console.log(bike2.year);
+        console.log(bike2.color);
+
+        bike1.drive();
+
+    </script>
+</body>
+
+</html>
